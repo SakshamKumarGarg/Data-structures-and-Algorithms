@@ -15,13 +15,13 @@ using namespace std;
         
 //     }
 
-// void product(int a){
-//     for (int i = 1; i <= 10; i++)
-//     {
-//         cout<<(a*i)<<endl;
-//         /* code */
-//     }
-//     return;
+void product(int a){
+    for (int i = 1; i <= 10; i++)
+    {
+        cout<<(a*i)<<endl;
+        /* code */
+    }
+    return;}
 
 // void printcounting(){
 //     for (int i = 1; i <= 100; i++)
@@ -36,6 +36,16 @@ using namespace std;
 //     return si;
 
 // }
+
+namespace saksham{
+    void product(int a){
+    for (int i = 1; i <= 10; i++)
+    {
+        cout<<(a*i)<<endl;
+        /* code */
+    }
+    }
+}
     
 
 
@@ -87,7 +97,9 @@ int main(){
     // }
     // int ans = checkforvote(9);
 
-    // product(5);
+    product(5);
+
+    saksham::product(3);
     // name();
 
     // int productanswer = getmultiplication(2,3,4);
