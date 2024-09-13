@@ -2,6 +2,32 @@
 using namespace std;
 
 int main(){
+
+    // HOLLOW RECTANGLE PATTEREN
+    for (int r = 0; r < 4; r++)
+    {
+        for (int c = 0; c < 5; c++)
+        {
+            if(r==0||r==3){
+                cout<<" * ";
+            }
+            else if(c==0||c==4){
+                cout<<" * ";
+            }
+            else{
+                cout<<"   ";
+
+            }
+            /* code */
+        }
+        cout<<endl;
+        
+        /* code */
+    }
+    
+
+    
+    
     
 
     // int length,width;
