@@ -14,15 +14,15 @@ int main(){
     //     /* code */
     // }
 
-    int n;
-    cin>>n;
-    int fact = 1;
+    // int n;
+    // cin>>n;
+    // int fact = 1;
 
-    for (n=7; n>=1; n--){
-        fact=fact*n;
-        /* code */
-    }
-    cout<<fact;
+    // for (n=7; n>=1; n--){
+    //     fact=fact*n;
+    //     /* code */
+    // }
+    // cout<<fact;
     
     
 return 0;
