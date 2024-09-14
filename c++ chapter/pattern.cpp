@@ -3,27 +3,54 @@ using namespace std;
 
 int main(){
 
-    // HOLLOW RECTANGLE PATTEREN
-    for (int r = 0; r < 4; r++)
+    //HOLLOW SQUARE
+    for (int r = 0; r < 5; r++)
     {
         for (int c = 0; c < 5; c++)
         {
-            if(r==0||r==3){
+            if (r==0||r==4)
+            {
                 cout<<" * ";
+                /* code */
             }
-            else if(c==0||c==4){
+            else if (c==0||c==4)
+            {
                 cout<<" * ";
+                /* code */
             }
             else{
                 cout<<"   ";
-
             }
+            
+            
             /* code */
         }
         cout<<endl;
-        
-        /* code */
+                /* code */
     }
+    
+
+    // HOLLOW RECTANGLE PATTEREN
+    // for (int r = 0; r < 4; r++)
+    // {
+    //     for (int c = 0; c < 5; c++)
+    //     {
+    //         if(r==0||r==3){
+    //             cout<<" * ";
+    //         }
+    //         else if(c==0||c==4){
+    //             cout<<" * ";
+    //         }
+    //         else{
+    //             cout<<"   ";
+
+    //         }
+    //         /* code */
+    //     }
+    //     cout<<endl;
+        
+    //     /* code */
+    // }
     
 
     
