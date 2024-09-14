@@ -4,17 +4,17 @@ using namespace std;
 int main(){
 
     //Numeric inverted half pyramid
-    for (int r = 0; r < 4; r++)               // ANOTHER METHOD
-    {
-        for (int c = 0; c < (4-r); c++)
-        {
-            cout<<c+1<<" ";
-            /* code */
-        }
-        cout<<endl;
+    // for (int r = 0; r < 4; r++)               // ANOTHER METHOD
+    // {
+    //     for (int c = 0; c < (4-r); c++)
+    //     {
+    //         cout<<c+1<<" ";
+    //         /* code */
+    //     }
+    //     cout<<endl;
         
-        /* code */
-    }
+    //     /* code */
+    // }
 
     //NUMERIC HALF PYRAMID
     // for (int r = 0; r < 5; r++)
