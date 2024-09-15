@@ -1,39 +1,33 @@
 #include<iostream>
 using namespace std;
 
-int main() {
-    //question 7.Debug the code. It is trying to print the given pattern.
+   //question 8.Debug the code.
     /*
 Pattern
-N = 4
-   1
-  232
- 34543
-4567654
+N = 5
+  *
+ ***
+*****
+ ***
+  *
 */
-    int no;
-    cin>>no;
+
+void printPatt(int n){
     int i=1;
-    int n = 2*no;
-    while(i<=(no)){
+    while(i<=n){
         int gaps = n-2*i+1,k=1;
-        int j = i;
+        if(i>(n)/2){
+            int no = (n+1)/2;
+            gaps = 2*(i%no);
+        }
         while(k<=gaps/2){
             cout<<" ";
             k = k + 1;
         }
-        int ch = n - gaps + 1, z = (ch+1)/2;
-        while(z<no){
-            cout<<j;
-            j = j - 1;
-            z = z + 1;
-        }
-        j = j - 1;
-        z = (ch-1)/2;
-        while(z>=1){
-            j = j - 1;
-            cout<<j;
-            z = z - 1;
+        int ch = n - gaps;
+        while(ch>=1){
+            cout<<"*";
+            ch = ch - 1;
         }
         k = 1;
         while(k<=gaps/2){
@@ -43,6 +37,52 @@ N = 4
         cout<<"\n";
         i = i + 1;
     }
+}
+int main() {
+    printPatt(5);
+ 
+
+    //question 7.Debug the code. It is trying to print the given pattern.
+    /*
+Pattern
+N = 4
+   1
+  232
+ 34543
+4567654
+*/
+    // int no;
+    // cin>>no;
+    // int i=1;
+    // int n = 2*no-1;
+    // while(i<=(no)){
+    //     int gaps = n-2*i+1,k=1;
+    //     int j = i;
+    //     while(k<=gaps/2){
+    //         cout<<" ";
+    //         k = k + 1;
+    //     }
+    //     int ch = n - gaps, z = (ch+1)/2;
+    //     while(z>=1){
+    //         cout<<j;
+    //         j = j + 1;
+    //         z = z - 1;
+    //     }
+    //     j = j - 1;
+    //     z = (ch-1)/2;
+    //     while(z>=1){
+    //         j = j - 1;
+    //         cout<<j;
+    //         z = z - 1;
+    //     }
+    //     k = 1;
+    //     while(k<=gaps/2){
+    //         cout<<" ";
+    //         k = k + 1;
+    //     }
+    //     cout<<"\n";
+    //     i = i + 1;
+    // }
 
     //question 6.Debug the code. It is trying to print the given pattern.
     /*
