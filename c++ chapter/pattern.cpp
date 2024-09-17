@@ -2,7 +2,21 @@
 using namespace std;
 
 int main(){
-
+    //Full Pyramid Pattern
+    int n:
+    cout<<"Enter n:";
+    cin>>n;
+    int gaps = 2*n, k=1;
+    for (int r = 0; r <= n; r++)
+    {
+        if (/* condition */)
+        {
+            /* code */
+        }
+        
+        /* code */
+    }
+    
     //Numeric inverted half pyramid
     // for (int r = 0; r < 4; r++)               // ANOTHER METHOD
     // {
