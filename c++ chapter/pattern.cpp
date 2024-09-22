@@ -2,20 +2,40 @@
 using namespace std;
 
 int main(){
-    //Full Pyramid Pattern
-    int n:
+    //Inverted Full Pyramid Pattern
+    int n;
     cout<<"Enter n:";
     cin>>n;
-    int gaps = 2*n, k=1;
-    for (int r = 0; r <= n; r++)
+    for (int r = 0; r < n; r++)
     {
-        if (/* condition */)
-        {
-            /* code */
+        for (int c = 0; c < r; c++){
+        cout<<" ";
         }
-        
-        /* code */
+
+        for(int c = 0; c<n-r; c++){
+        cout<<"* ";
+        }
+        cout<<endl;
+
     }
+    
+    //Full Pyramid Pattern           //we can use for loop even without curly braces
+    // int n;
+    // cout<<"Enter n:";
+    // cin>>n;
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < n-r-1; c++){
+    //     cout<<" ";
+    //     }
+
+    //     for(int c = 0; c<r+1; c++){
+    //     cout<<"* ";
+    //     }
+    //     cout<<endl;
+
+    // }
+    
     
     //Numeric inverted half pyramid
     // for (int r = 0; r < 4; r++)               // ANOTHER METHOD
