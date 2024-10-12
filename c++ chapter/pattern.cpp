@@ -2,7 +2,60 @@
 using namespace std;
 
 int main(){
-    //
+    // Hollow Pyramid
+    int n;
+    cin>>n;
+    for (int r = 0; r < n; r++)
+    {
+        for (int c = 0; c < n-r-1; c++){
+            
+        cout<<" ";
+        }
+
+        for(int c = 0; c<r+1; c++){
+            if ((c==1 && r == 2) || (c==1 && r == 3) || (c==2 && r == 3))
+            {
+                cout<<"  ";
+                /* code */
+            }
+            else{
+                cout<<"* ";
+            }
+        }
+        cout<<endl;
+    }
+   
+    
+
+    //Diamond Pattern
+    // int n;
+    // cout<<"Enter n:";
+    // cin>>n;
+    // for (int r = 0; r < n; r++){
+    //     for (int c = 0; c < n-r-1; c++){
+    //     cout<<" ";
+    //     }
+
+    //     for(int c = 0; c<r+1; c++){
+    //     cout<<"* ";
+    //     }
+    //     cout<<endl;
+
+    // }
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < r; c++){
+    //     cout<<" ";
+    //     }
+
+    //     for(int c = 0; c<n-r; c++){
+    //     cout<<"* ";
+    //     }
+    //     cout<<endl;
+
+    // }
+
+
     //Inverted Full Pyramid Pattern
     // int n;
     // cout<<"Enter n:";

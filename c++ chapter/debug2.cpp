@@ -25,6 +25,25 @@ using namespace std;
 // }
 
 int main(){
+    //Debug the code. Print reverse of a number
+	int n,a=0;
+	cin>>n;
+    int z = n,digits=0;
+    while(z!=0){
+        z = z/10;
+        digits++;;
+    }
+    while(n!=0){
+        int k = n%10,z=digits-1;
+        while(z--){
+            k = k*10;
+        }
+        a = a + k;
+        digits--;
+        n = n/10;
+    }
+    cout<<a;
+
     //Debug the code. Correct the code for printing the pattern.
     /*
 Pattern for N = 5
@@ -35,35 +54,7 @@ Pattern for N = 5
 1********1
 */
 
-    int n;
-    cin>>n;
-    int i=0,gaps = n-1;
-    while(i<n){
-        int k=0,gaps=n-1-i;
-        while(k<gaps){
-            cout<<" ";
-            k++;
-        }
-
-        int num = i+1;
-        while(num>0){
-            cout<<num;
-            num = num - 1;
-        }
-        k = 2;
-        while(k<=(i+1)){
-            cout<<k;
-            k++;
-        }
-        k =0;
-        while(k<gaps){
-            cout<<" ";
-            k++;
-        }
-        i++;
-        cout<<"\n";
-    }
-
+    
     //Debug the code. Correct the code for printing the pattern.
     /*
 Pattern for N = 4
