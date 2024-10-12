@@ -13,13 +13,13 @@ int main(){
         }
 
         for(int c = 0; c<r+1; c++){
-            if ((c==1 && r == 2) || (c==1 && r == 3) || (c==2 && r == 3))
+            if (c==0 || r == n-1 || r == 0 || c == r)
             {
-                cout<<"  ";
+                cout<<"* ";
                 /* code */
             }
             else{
-                cout<<"* ";
+                cout<<"  ";
             }
         }
         cout<<endl;
