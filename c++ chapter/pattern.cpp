@@ -2,28 +2,140 @@
 using namespace std;
 
 int main(){
-    // Hollow Pyramid
+    //Mix Pyramid
     int n;
+    cout<<"Enter n:";
     cin>>n;
     for (int r = 0; r < n; r++)
     {
-        for (int c = 0; c < n-r-1; c++){
-            
-        cout<<" ";
+        for (int c = 0; c < n-r; c++){
+        cout<<"*";
         }
 
-        for(int c = 0; c<r+1; c++){
-            if (c==0 || r == n-1 || r == 0 || c == r)
-            {
-                cout<<"* ";
-                /* code */
-            }
-            else{
-                cout<<"  ";
-            }
+        for(int c = 0; c<2*r+1; c++){
+        cout<<" ";
         }
+        for (int c = 0; c < n-r; c++)
+        {
+            cout<<"*";
+            /* code */
+        }
+        
         cout<<endl;
     }
+    for (int r = 0; r < n; r++)
+    {
+        for (int c = 0; c < r+1; c++){
+        cout<<"*";
+        }
+
+        for(int c = 0; c<2*(n-r)-1; c++){
+        cout<<" ";
+        }
+        for (int c = 0; c < r+1; c++)
+        {
+            cout<<"*";
+            /* code */
+        }
+        
+        cout<<endl;
+    }
+
+
+    // }
+    //Hollow Diamond
+    // int n;
+    // cin>>n;
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < n-r-1; c++){
+            
+    //     cout<<" ";
+    //     }
+
+    //     for(int c = 0; c<r+1; c++){
+    //         if (c==0 || /*r = n-1 ||*/ r == 0 || c == r)
+    //         {
+    //             cout<<"* ";
+    //             /* code */
+    //         }
+    //         else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < r; c++)
+    //     {
+    //         cout<<" ";
+    //         /* code */
+    //     }
+    //     for (int c = 0; c < n-r; c++)
+    //     {
+    //         if(/*r==0 ||*/ r==n-1 || c == 0 || c == n-r-1){
+    //         cout<<"* ";
+    //         /* code */
+    //     }
+    //     else{
+    //         cout<<"  ";
+    //     }
+    //     }
+    //     cout<<endl;
+        
+        
+    //     /* code */
+    // }
+
+    //Inverted Hollow Pyramid
+    // int n;
+    // cin>>n;
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < r; c++)
+    //     {
+    //         cout<<" ";
+    //         /* code */
+    //     }
+    //     for (int c = 0; c < n-r; c++)
+    //     {
+    //         if(r==0 || r==n-1 || c == 0 || c == n-r-1){
+    //         cout<<"* ";
+    //         /* code */
+    //     }
+    //     else{
+    //         cout<<"  ";
+    //     }
+    //     }
+    //     cout<<endl;
+        
+        
+    //     /* code */
+    // }
+    
+    // Hollow Pyramid
+    // int n;
+    // cin>>n;
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < n-r-1; c++){
+            
+    //     cout<<" ";
+    //     }
+
+    //     for(int c = 0; c<r+1; c++){
+    //         if (c==0 || r == n-1 || r == 0 || c == r)
+    //         {
+    //             cout<<"* ";
+    //             /* code */
+    //         }
+    //         else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
    
     
 
