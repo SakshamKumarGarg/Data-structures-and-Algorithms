@@ -2,10 +2,26 @@
 using namespace std;
 
 int main(){
-    int arr[3];
-    fill(arr,arr+3,24);
-    cout<<arr[0]<<" "<<arr[1]<<" "<<arr[2]<<endl;
-    // int arr[4];
+    int arr[5];
+    for (int i = 0; i < 5; i++)
+    {
+        cin>>arr[i];
+        /* code */
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<arr[i]<<" "<<endl;
+        /* code */
+    }
+    
+    
+    // int a[3] = {20,30,34};
+    // cin>>a[1];
+    // cout<<a[2];
+    // int arr[3];
+    // fill(arr,arr+3,24);
+    // cout<<arr[0]<<" "<<arr[1]<<" "<<arr[2]<<endl;
+    // // int arr[4];
     // int brr[] = {1,2,3,4};
     // int drr[4] = {5};
 
