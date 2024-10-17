@@ -2,44 +2,137 @@
 using namespace std;
 
 int main(){
-    //Mix Pyramid
+    //ABCBA
     int n;
-    cout<<"Enter n:";
     cin>>n;
-    for (int r = 0; r < n; r++)
+    for (int i = 0; i < n; i++)
     {
-        for (int c = 0; c < n-r; c++){
-        cout<<"*";
-        }
-
-        for(int c = 0; c<2*r+1; c++){
-        cout<<" ";
-        }
-        for (int c = 0; c < n-r; c++)
+        char ch = 'A' ; //ASCII 65 initialize
+        for (int j = 0; j < i+1; j++)
         {
-            cout<<"*";
+            cout<<ch;
+            ch++;
+            /* code */
+        }
+        ch--;
+        while (ch>'A')
+        {
+            ch--;
+            cout<<ch;
             /* code */
         }
         
         cout<<endl;
-    }
-    for (int r = 0; r < n; r++)
-    {
-        for (int c = 0; c < r+1; c++){
-        cout<<"*";
-        }
-
-        for(int c = 0; c<2*(n-r)-1; c++){
-        cout<<" ";
-        }
-        for (int c = 0; c < r+1; c++)
-        {
-            cout<<"*";
-            /* code */
-        }
         
-        cout<<endl;
+        /* code */
     }
+    
+    //Full fancy 12
+    // int n;
+    // cin>>n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < 2*i+1; j++)
+    //     {
+    //         if (j%2==0)
+    //         {
+    //             cout<<i+1;
+    //             /* code */
+    //         }
+    //         else{
+    //             cout<<"*";
+    //         }
+            
+    //         /* code */
+    //     }
+    //     cout<<endl;
+        
+    //     /* code */
+    // }
+    // n--;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < 2*(n-i)-1; j++)
+    //     {
+    //         if (j%2==0)
+    //         {
+    //             cout<<n-i;
+    //             /* code */
+    //         }
+    //         else{
+    //             cout<<"*";
+    //         }
+            
+    //         /* code */
+    //     }
+    //     cout<<endl;
+        
+    //     /* code */
+    // }
+    
+    
+
+    //Fancy 12 pattern
+    // int n;
+    // cin>>n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < 2*i+1; j++)
+    //     {
+    //         if (j%2==0)
+    //         {
+    //             cout<<i+1;
+    //             /* code */
+    //         }
+    //         else{
+    //             cout<<"*";
+    //         }
+            
+    //         /* code */
+    //     }
+    //     cout<<endl;
+        
+    //     /* code */
+    // }
+    
+    //Mix Pyramid
+    // int n;
+    // cout<<"Enter n:";
+    // cin>>n;
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < n-r; c++){
+    //     cout<<"*";
+    //     }
+
+    //     for(int c = 0; c<2*r+1; c++){
+    //     cout<<" ";
+    //     }
+    //     for (int c = 0; c < n-r; c++)
+    //     {
+    //         cout<<"*";
+    //         /* code */
+    //     }
+        
+    //     cout<<endl;
+    // }
+    // for (int r = 0; r < n; r++)
+    // {
+    //     for (int c = 0; c < r+1; c++){
+    //     cout<<"*";
+    //     }
+
+    //     for(int c = 0; c<2*(n-r)-1; c++){
+    //     cout<<" ";
+    //     }
+    //     for (int c = 0; c < r+1; c++)
+    //     {
+    //         cout<<"*";
+    //         /* code */
+    //     }
+        
+    //     cout<<endl;
+    // }
 
 
     // }
