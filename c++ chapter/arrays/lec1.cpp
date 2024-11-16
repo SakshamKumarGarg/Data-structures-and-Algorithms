@@ -108,7 +108,7 @@ int main(){
     // reversearray(arr,n);
 
     //M2 STL using c++ lib
-    reverse(arr,arr+n);
+    // reverse(arr,arr+n);
 
     for (int i = 0; i < n; i++)
     {
