@@ -1,4 +1,5 @@
 #include<iostream>
+#include<limits.h>
 using namespace std;
 
 // void solve(int num[],int n){
@@ -10,6 +11,42 @@ using namespace std;
 //     return;
     
 // }
+
+void printZeroandOne(int arr[],int n){
+    int zerocount = 0;
+    int onecount = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if(arr[i] == 0){
+            zerocount++;
+        }
+        else if (arr[i] == 1)
+        {
+            onecount++;
+            /* code */
+        }
+
+        
+        /* code */
+    }
+    cout<<"Total zero"<<zerocount<<endl;
+    cout<<"Total one"<<onecount<<endl;
+}
+
+void printextreme(int arr[], int n){
+    int i = 0;
+    int j = n-1;
+    while (i<=j)
+    {
+        cout<<arr[i]<<" ";
+        i++;
+        if(j>i){
+        cout<<arr[j]<<" ";
+        j--;
+        /* code */
+    }
+    }
+}
 
 void inputarray(int arr[],int n){
     for (int i = 0; i < n; i++)
@@ -37,6 +74,16 @@ bool findtarget(int num[], int n,int target){
     
 }
 
+int findMax(int arr[], int size){
+    int MaxAns = INT_MIN; 
+    for (int i = 0; i < size; i++)
+    {
+        MaxAns = max(MaxAns,arr[i]);
+     /* code */
+    }
+    return MaxAns;
+}
+
 
 int main(){
     int size;
@@ -53,7 +100,13 @@ int main(){
     cin>>target;
 
     int ans = findtarget(arr,size,target);
-    cout<<ans;
+    cout<<ans<<endl;
+
+    cout<<"Max number is:"<<findMax(arr,size)<<endl;
+
+    printZeroandOne(arr,size);
+
+    printextreme(arr,size);
     // int arr[4] = {0};
 
     // int size = 4;
