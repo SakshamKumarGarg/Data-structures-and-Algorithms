@@ -1,18 +1,85 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int arr[5];
-    for (int i = 0; i < 5; i++)
+// void solve(int num[],int n){
+//     for (int i = 0; i < n; i++)
+//     {
+//         num[i] = num[i] + 10;
+//         /* code */
+//     }
+//     return;
+    
+// }
+
+void inputarray(int arr[],int n){
+    for (int i = 0; i < n; i++)
     {
+        cout<<"enter the value at index:"<<i<<endl;
         cin>>arr[i];
         /* code */
     }
-    for (int i = 0; i < 5; i++)
+    
+}
+
+bool findtarget(int num[], int n,int target){
+    for (int i = 0; i < n; i++)
     {
-        cout<<arr[i]<<" ";
+        int currentelement = num[i];
+        if (currentelement == target)
+        {
+            return true;
+            /* code */
+        }
+        
         /* code */
     }
+    return false;
+    
+}
+
+
+int main(){
+    int size;
+    cin>>size;
+    int arr[size];
+
+    inputarray(arr,size);
+
+
+
+
+    int target;
+    cout<<"Enter target value:";
+    cin>>target;
+
+    int ans = findtarget(arr,size,target);
+    cout<<ans;
+    // int arr[4] = {0};
+
+    // int size = 4;
+    // solve(arr,size);
+    // for (int i = 0; i<4; i++)
+    // {
+    //     cout<<arr[i]<<endl;
+    //     /* code */
+    // }
+    
+    // int arr[3][3];
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     for(int j = 0; j<3; j++){
+    //     cin>>arr[i][j];
+    //     /* code */
+    // }
+    // }
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     for(int j = 0; j<3; j++){
+    //     cout<<arr[i][j]<<" | ";
+    //     /* code */
+    // }
+    // cout<<endl;
+    // }
     
     
     // int a[3] = {20,30,34};
