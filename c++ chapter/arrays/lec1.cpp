@@ -34,20 +34,20 @@ using namespace std;
 //     cout<<"Total one"<<onecount<<endl;
 // }
 
-// void printextreme(int arr[], int n){
-//     int i = 0;
-//     int j = n-1;
-//     while (i<=j)
-//     {
-//         cout<<arr[i]<<" ";
-//         i++;
-//         if(j>i){
-//         cout<<arr[j]<<" ";
-//         j--;
-//         /* code */
-//     }
-//     }
-// }
+void printextreme(int arr[], int n){
+    int i = 0;
+    int j = n-1;
+    while (i<=j)
+    {
+        cout<<arr[i]<<" ";
+        i++;
+        if(j>i){
+        cout<<arr[j]<<" ";
+        j--;
+        /* code */
+    }
+    }
+}
 
 // void inputarray(int arr[],int n){
 //     for (int i = 0; i < n; i++)
@@ -75,15 +75,15 @@ using namespace std;
     
 // }
 
-// int findMax(int arr[], int size){
-//     int MaxAns = INT_MIN; 
-//     for (int i = 0; i < size; i++)
-//     {
-//         MaxAns = max(MaxAns,arr[i]);
-//      /* code */
-//     }
-//     return MaxAns;
-// }
+int findMax(int arr[], int size){
+    int MaxAns = INT_MIN; 
+    for (int i = 0; i < size; i++)
+    {
+        MaxAns = max(MaxAns,arr[i]);
+     /* code */
+    }
+    return MaxAns;
+}
 
 void reversearray(int arr[], int n){
     int l = 0, h = n-1;
@@ -110,11 +110,11 @@ int main(){
     //M2 STL using c++ lib
     // reverse(arr,arr+n);
 
-    for (int i = 0; i < n; i++)
-    {
-        cout<<arr[i]<<" ";
-        /* code */
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout<<arr[i]<<" ";
+    //     /* code */
+    // }
     
 
     // fill(arr,arr+2,34);
@@ -134,11 +134,11 @@ int main(){
     // int ans = findtarget(arr,size,target);
     // cout<<ans<<endl;
 
-    // cout<<"Max number is:"<<findMax(arr,size)<<endl;
+    cout<<"Max number is:"<<findMax(arr,n)<<endl;
 
     // printZeroandOne(arr,size);
 
-    // printextreme(arr,size);
+    // printextreme(arr,n);
     // int arr[4] = {0};
 
     // int size = 4;

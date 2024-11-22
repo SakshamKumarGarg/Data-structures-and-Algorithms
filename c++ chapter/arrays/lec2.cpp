@@ -55,14 +55,13 @@ pair<int,int> checktwoSum(int arr[],int n,int target){
                 ans.second = arr[j];
                 return ans;
                 /* code */
-            }
-            
-            /* code */
-        }
-        
+            }       /* code */
+        }    
     }
     return ans;
 }
+
+
 void checkthreeSum(int arr[],int n,int target){
     for (int i = 0; i < n; i++)
     {
@@ -88,6 +87,8 @@ void checkthreeSum(int arr[],int n,int target){
     
 
 }
+
+
 void rotatearray(int arr[],int n, int shift){
     int finalshift = shift%n;
     if(finalshift ==0){
@@ -110,12 +111,8 @@ void rotatearray(int arr[],int n, int shift){
     }
     for (int i = 0; i < finalshift; i++)
     {
-        arr[i] = temp[i];
-        /* code */
-    }
-    
-    
-    
+        arr[i] = temp[i];    /* code */
+    }    
 }
 
 
@@ -131,18 +128,19 @@ int main(){
         cout<<arr[i]<<" ";
         /* code */
     }
+    cout<<endl;
     
-    rotatearray(arr,size,shift);
+    // rotatearray(arr,size,shift);
 
-    cout<<"After:"<<endl;
-    for (int i = 0; i < size; i++)
-    {
-        cout<<arr[i]<<" ";
-        /* code */
-    }
+    // cout<<"After:"<<endl;
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cout<<arr[i]<<" ";
+    //     /* code */
+    // }
     
 
-    // checkthreeSum(arr,size,target);
+    checkthreeSum(arr,size,target);
 
     // pair<int,int> ans = checktwoSum(arr,size,target);
     // if (ans.first == -1 && ans.second == -1)

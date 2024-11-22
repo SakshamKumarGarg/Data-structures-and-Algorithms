@@ -1,4 +1,5 @@
 #include<iostream>
+#include<limits.h>
 using namespace std;
 
 
@@ -31,7 +32,6 @@ int findMinimumIn2DArray(int arr[][4], int rowSize, int colSize) {
             minValue = min(arr[i][j], minValue);
         }
     }
-    
     return minValue;
 
 }
@@ -52,7 +52,7 @@ int findMaximumIn2DArray(int arr[][4], int rowSize, int colSize) {
 
 }
 
-void printRowSum(int arr[][4], int rowSize, int colSize) {
+void printRowSum(int arr[][3], int rowSize, int colSize) {
 
     for(int i=0; i<rowSize; i++) {
         int sum = 0;
@@ -67,7 +67,7 @@ void printRowSum(int arr[][4], int rowSize, int colSize) {
     
 }
 
-void printColumnSum(int arr[][4], int rowSize, int colSize) {
+void printColumnSum(int arr[][3], int rowSize, int colSize) {
 
     for(int col=0; col<colSize; col++) {
         //hr column k liye mere pass sum = 0 hona chahiye 
@@ -153,14 +153,14 @@ int main() {
 
     transposeMatrix(arr,rowSize, colSize);
 
-    //printDiagnolSum(arr,rowSize,colSize);
+    // printDiagnolSum(arr,rowSize,colSize);
     
     
-    //printColumnSum(arr,rowSize,colSize);
+    // printColumnSum(arr,rowSize,colSize);
 
     
 
-    //printRowSum(arr,rowSize,colSize);
+    // printRowSum(arr,rowSize,colSize);
 
 
     // int maxAns = findMaximumIn2DArray(arr,rowSize,colSize);
