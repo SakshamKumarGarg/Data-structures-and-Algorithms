@@ -2,30 +2,30 @@
 #include<algorithm>
 using namespace std;
 
-int findUniqueNumber(int arr[] , int n) {
-    int ans = 0 ;
+int findUniqueNumber(int arr[] , int n){
+    int ans = 0;
 
     //to find the final answer, we need to XOR all the numbers in the array
     for(int i=0; i<n; i++) {
         ans = ans ^ arr[i];
     }
-
     return ans;
-
 }
 
 void sortZeroOne(int arr[], int n) {
     int zeroCount = 0;
     int oneCount = 0;
     //counting
-    for(int i=0; i<n; i++) {
-        if(arr[i] == 0) {
+    for(int i=0; i<n; i++){
+        if(arr[i] == 0){
             zeroCount++;
         }
-        if(arr[i] == 1) {
+        if(arr[i] == 1){
             oneCount++;
         }
     }
+
+
     //insertion
     fill(arr, arr+zeroCount, 0);
     fill(arr+zeroCount, arr+n, 1);
@@ -163,11 +163,6 @@ void rotateArray(int arr[], int size, int n) {
     for(int i=0; i<n; i++) {
         arr[i] = temp[i];
     }
-
-
-
-
-
 }
 
 int main() {
