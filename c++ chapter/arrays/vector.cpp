@@ -12,6 +12,7 @@ using namespace std;
 //     }
     
 // }
+
 void print(vector<int>v){
     int size = v.size();
     cout<<"Printing Vector"<<endl;
@@ -21,7 +22,6 @@ void print(vector<int>v){
         cout<<v.at(i)<<endl;
         /* code */
     }
-    
 }
 
 void print2(vector<int>v){
@@ -37,6 +37,12 @@ int main(){
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
+    v.push_back(3);
+
+    int n = v.size();
+
+    // v.push_back(4);
+    cout<<n;
 
     // print2(v);
     // vector<char>v;
