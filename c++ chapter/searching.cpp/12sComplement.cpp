@@ -8,7 +8,7 @@ vector<int>findComplement(vector<int> binary){
     vector<int>twosComp(n+1,0);
     for (int i = n-1; i >=0; i--)
     {
-        twosComp[i] = binary[i] == 0 ? 1:
+        twosComp[i] = binary[i] == 0 ? 1:0;
     }
     int carry = 1;
     for (int i = n-1;i>=0 ;i--)
