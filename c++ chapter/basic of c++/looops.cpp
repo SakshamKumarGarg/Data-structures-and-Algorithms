@@ -9,13 +9,13 @@ int main() {
   //   cout << i << " ";
   // }
 
-  //print table of 3;'
-  cout << "Loop starts now" << endl;
-  for(int i=1; i<=10; i++)
-  {
-    cout << (3*i) << " ";
-  }
-  cout << "Loop ended" << endl;
+  // //print table of 3;'
+  // cout << "Loop starts now" << endl;
+  // for(int i=1; i<=10; i++)
+  // {
+  //   cout << (3*i) << " ";
+  // }
+  // cout << "Loop ended" << endl;
 
 
 

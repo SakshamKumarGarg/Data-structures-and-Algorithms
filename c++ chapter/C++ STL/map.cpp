@@ -5,7 +5,6 @@ using namespace std;
 
 int main(){
     map<string, string> table;
-
     table["in"] = "india";
     table.insert(make_pair("en","Engliand"));
 
@@ -21,10 +20,6 @@ int main(){
     if (table.count("im")==1){
         cout<<"Key found"; 
     }
-    {
-        /* code */
-    }
-    
 
     if(table.find("en")!=table.end()){
         cout<<"key found"<<endl;
