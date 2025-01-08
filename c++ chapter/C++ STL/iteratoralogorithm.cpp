@@ -22,10 +22,10 @@ int main(){
     arr[4] = 14;
     arr[5] = 15;
 
-    auto it = partition(arr.begin(),arr.end(),checkeven);
-    for(int a:arr){
-        cout<<a<<" ";
-    }
+    // auto it = partition(arr.begin(),arr.end(),checkeven);
+    // for(int a:arr){
+    //     cout<<a<<" ";
+    // }
 
 
 
@@ -63,11 +63,12 @@ int main(){
     // cout<<ans;
 
     // int ans = count_if(arr.begin(),arr.end(),checkeven);
-    // cout<<ans;
+
+   // cout<<ans;
 
 
-    // auto it = find_if(arr.begin(),arr.end(),checkeven);
-    // cout<<*it<<endl;
+    auto it = find_if(arr.begin(),arr.end());
+    cout<<*it<<endl;
 
     // for_each(arr.begin(),arr.end(),printdouble);
 

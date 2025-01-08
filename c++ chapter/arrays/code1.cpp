@@ -1,5 +1,6 @@
 #include<iostream>
 #include<limits.h>
+#include<vector>
 using namespace std;
 
 
@@ -103,22 +104,49 @@ void printDiagnolSum(int arr[][3], int rowSize, int colSize) {
     // cout << "sum " << sum <<endl;
 }
 
-void transposeMatrix(int arr[][3], int rowSize, int colSize) {
+// void transposeMatrix(int arr[][3], int rowSize, int colSize) {
 
-    //same array me hi transpose karo
-    for(int i=0; i<rowSize; i++) {
-        for(int j=i; j<colSize; j++) {
-            swap(arr[i][j], arr[j][i]);
+//     //same array me hi transpose karo
+//     for(int i=0; i<rowSize; i++) {
+//         for(int j=i; j<colSize; j++) {
+//             swap(arr[i][j], arr[j][i]);
+//         }
+//     }
+
+//     //printing
+//     cout << "printint the transpose" << endl;
+//     for(int i=0; i<rowSize; i++) {
+//         for(int j=0; j<colSize; j++) {
+//             cout << arr[i][j] << " ";
+//         }
+//         cout << endl;
+//     }
+
+void rotate(vector<vector<int>> &matrix) {
+    int n = matrix.size();
+    int m = matrix[0].size();
+    for(int i = 0;i<n;i++){
+        for(int j = 0;j<m;j++){
+            swap(matrix[i][j],matrix[j][i]);
+        }
+    }
+    for(int i =0;i<n;i++){
+        for(int j =0; j <m;j++){
+            swap(matrix[i][j],matrix[i][m-j-1]);
         }
     }
 
-    //printing
-    cout << "printint the transpose" << endl;
-    for(int i=0; i<rowSize; i++) {
-        for(int j=0; j<colSize; j++) {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
+    for(int i=0; i<n; i++) {
+    for(int j=0; j<m; j++) {
+        cout << matrix[i][j] << " ";
+    }
+    cout << endl;
+}
+
+
+
+        
+        
     }
 
 
@@ -138,20 +166,18 @@ void transposeMatrix(int arr[][3], int rowSize, int colSize) {
     // }
 
 
-}
-
-
 int main() {
 
-    int arr[3][3] = {
-                    {10,11,12},
-                    {20,21,22},
-                    {30,31,32}
-                    };
-    int rowSize = 3;
-    int colSize = 3;
+    vector<vector<int>> matrix = {
+        {10, 11, 12},
+        {20, 21, 22},
+        {30, 31, 32}
+    };
+    // int rowSize = 3;
+    // int colSize = 3;
 
-    transposeMatrix(arr,rowSize, colSize);
+    // transposeMatrix(arr,rowSize, colSize);
+    rotate(matrix);
 
     // printDiagnolSum(arr,rowSize,colSize);
     
