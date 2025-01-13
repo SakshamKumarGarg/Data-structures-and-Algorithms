@@ -33,7 +33,7 @@ int main(){
 
     arr.push_back(Student(90,"saksham"));
     arr.push_back(Student(80,"kunal"));
-    arr.push_back(Student(90,"nitin"));
+    arr.push_back(Student(9,"nitin"));
 
 
     sort(arr.begin(),arr.end(),comparator());

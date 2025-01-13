@@ -45,8 +45,8 @@ int main(){
 
      
     //creation
-    // list<int> myList;
-    // myList.push_back(10);
+    list<int> myList;
+    myList.push_back(10);
     // myList.push_back(20);
     // myList.push_back(30);
     // myList.push_back(40);
@@ -72,16 +72,16 @@ int main(){
     // cout<<endl;
 
     // myList.remove(10);
-    //     cout<<"after removing"<<endl;
+        cout<<"after removing"<<endl;
 
-    // list<int>:: iterator it2 = myList.begin(); 
+    list<int>:: iterator it2 = myList.begin(); 
 
-    // while (it2 != myList.end())
-    // {
-    //     cout<<*it2<<" ";
-    //     it2++;
-    //     /* code */
-    // }
+    while (it2 != myList.end())
+    {
+        cout<<*it2<<" ";
+        it2++;
+        /* code */
+    }
 
 
 

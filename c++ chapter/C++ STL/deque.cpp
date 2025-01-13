@@ -10,19 +10,22 @@ int main(){
     dq.push_back(30);
     dq.push_back(40);
 
-    dq.push_front(100);
-    dq.push_front(200);
-    dq.push_front(300);
+    // dq.push_front(100);
+    // dq.push_front(200);
+    // dq.push_front(300);
 
-    dq.pop_front();
-    dq.pop_back();
+    // dq.pop_front();
+    // dq.pop_back();
 
     // cout<<dq.size()<<endl;
     // cout<<dq.at(1);
+    // cout<<dq.at(0);
+    // dq.erase(dq.begin()+2);
 
-    dq.erase(dq.begin(),dq.end());
+    // dq.erase(dq.begin(),dq.end());
 
-    cout<<dq.size();
+    // cout<<dq[2];
+    // cout<<dq.size();
 
 
     // cout<<dq.front()<<endl;
@@ -35,15 +38,16 @@ int main(){
     //     cout<<"dq is not empty";
     // }
 
-    // deque<int>:: iterator it = dq.begin();
+    deque<int>:: iterator it = dq.begin();
 
-    // while (it != dq.end())
-    // {
-    //     cout<< *it << " ";
-    //     it++;
-    //     /* code */
-    // }
-    
+    while (it != dq.end())
+    {
+        cout<< *it << " ";
+        it++;
+        /* code */
+    }
+
+    dq.erase(dq.begin(),dq.end());    
 
 
 

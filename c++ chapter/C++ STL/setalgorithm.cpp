@@ -25,16 +25,19 @@ int main(){
     // for(int a:result){
     //     cout<<a<<" ";
     // }
+    // cout<<endl;
 
     // set_intersection(first.begin(),first.end(),second.begin(),second.end(),inserter(result,result.begin()));
     // for(int a:result){
-    //     cout<<a<<" ";
+        // cout<<a<<" ";
     // }
+    // cout<<endl;
 
     // set_difference(first.begin(),first.end(),second.begin(),second.end(),inserter(result,result.begin()));
     // for(int a:result){
     //     cout<<a<<" ";
     // }
+    // cout<<endl;
 
     set_symmetric_difference(first.begin(),first.end(),second.begin(),second.end(),inserter(result,result.begin()));
     for(int a:result){

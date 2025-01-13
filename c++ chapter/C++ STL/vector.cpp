@@ -29,31 +29,33 @@ int main(){
     
 
 
-    // vector<int> first;
-    // vector<int> second;
-    // // first.reserve(10);
+    vector<int> first;
+    vector<int> second;
+    // first.reserve(10);
 
-    // first.push_back(10);
-    // first.push_back(20);
-    // first.push_back(30);
-    // first.push_back(40);
-    // // first.push_back(50);
+    first.push_back(10);
+    first.push_back(20);
+    first.push_back(30);
+    first.push_back(40);
+    // first.push_back(50);
     // // // first.clear();
 
-    // second.push_back(11);
-    // second.push_back(12);
-    // second.push_back(14);
-    // second.push_back(13);
+    second.push_back(11);
+    second.push_back(12);
+    second.push_back(14);
+    second.push_back(13);
 
-    // first.swap(second);
+    first.swap(second);
 
     // cout<<first[0]<<" "<<first[1]<<" "<<first[2]<<" "<<first[3]<<endl;
 
-    // for(int i:first){
-    //     cout<< i<<" ";
-    // }
+    for(int i:first){
+        cout<< i<<" ";
+    }
 
-    // first.insert(first.begin(),60);
+    first.insert(first.begin(),60);
+    first[2] = 34;
+    first.insert(first.begin()+2,12);
 
 
     // cout<<first.capacity()<<endl;
@@ -65,14 +67,14 @@ int main(){
     // cout<<first.size()<<endl;
     // cout<<first.max_size()<<endl;
 
-    // vector<int>::iterator it = first.begin();
+    vector<int>::iterator it = first.begin();
 
-    // while (it != first.end())
-    // {
-    //     cout<<*it<<" ";
-    //     it++;
-    //     /* code */
-    // }
+    while (it != first.end())
+    {
+        cout<<*it<<" ";
+        it++;
+        /* code */
+    }
     
 
     // vector<int> marks;

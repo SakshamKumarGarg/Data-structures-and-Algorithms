@@ -94,24 +94,20 @@ void rotatearray(int arr[],int n, int shift){
     if(finalshift ==0){
         return;
     }
-
-
     int temp[1000];
     int index = 0;
     for (int i = n - finalshift; i < n; i++)
     {
         temp[index] = arr[i];
         index++;
-        /* code */
     }
     for (int i = n-1; i >=0; i--)
     {
         arr[i] = arr[i-finalshift];
-        /* code */
     }
     for (int i = 0; i < finalshift; i++)
     {
-        arr[i] = temp[i];    /* code */
+        arr[i] = temp[i]; 
     }    
 }
 

@@ -18,8 +18,8 @@ int main(){
     // auto it = max_element(arr.begin(),arr.end());
     // cout<<*it<<endl;
 
-    // // auto it = lower_bound(arr.begin(),arr.end(),35);
-    // // cout<<*it<<endl;
+    auto it = lower_bound(arr.begin(),arr.end(),50);
+    cout<<*it<<endl;
 
     // auto it = upper_bound(arr.begin(),arr.end(),40);
     // cout<<*it<<endl;

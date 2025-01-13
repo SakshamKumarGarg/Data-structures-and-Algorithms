@@ -1,4 +1,6 @@
-(4,0));
 
-    int totalrows = arr.size();
-    int totalcolumns =  arr[0].size();
+    second.push_back(5);
+    second.push_back(6);
+
+    int totalproduct = inner_product(first.begin(),first.end(),second.begin(),0);
+    cout<<totalproduct<<endl;

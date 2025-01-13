@@ -5,13 +5,14 @@ using namespace std;
 int main(){
 
     
-    // queue<int> q1;
-    // queue<int> q2;
+    queue<int> q1;
+    queue<int> q2;
 
-    // q1.push(10);
-    // q1.push(20);
-    // q1.push(30);
-    // q1.push(40);
+    q1.push(10);
+    q1.push(20);
+    q1.push(30);
+    q1.push(40);
+
 
     // q2.push(100);
     // q2.push(200);
@@ -36,8 +37,8 @@ int main(){
     // q.pop();
     // // cout<<q.size();
 
-    // cout<<q.front()<<endl;
-    // cout<<q.back()<<endl;
+    cout<<q1.front()<<endl;
+    cout<<q1.back()<<endl;
 
 
 

@@ -12,7 +12,7 @@ int main(){
     st.insert(4);
     st.insert(15);
 
-    cout<<st.size()<<endl;
+    // cout<<st.size()<<endl;
 
     // if (st.count(155)==0){
     //     cout<<"key not found";
