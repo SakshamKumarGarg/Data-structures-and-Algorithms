@@ -18,11 +18,11 @@ int binarysearch(int arr[],int n,int target){
             return mid-1;
         }
         else if(arr[mid]<target){
-            e = mid -2;
+            s = mid +2;
 
         }
         else{
-            s = mid+2;
+            e = mid-2;
         }
         mid = s+(e-s)/2;
     }
@@ -32,7 +32,7 @@ int binarysearch(int arr[],int n,int target){
 int main(){
     int arr[8] = {10,3,40,20,30,50,80,70};
     int n = 8;
-    int target = 40;
+    int target = 80;
     int ans = binarysearch(arr,n,target);
     cout<<ans;
 return 0;

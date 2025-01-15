@@ -46,7 +46,7 @@ double myprecision(int n){
 int main(){
     int num = 63;
     double ans = myprecision(num);
-    cout<<ans;   // cout only prints upto 5 precision
+    // cout<<ans;   // cout only prints upto 5 precision
     printf("prescision sqrt: %.8f\n", ans);
     cout<<endl;
 
