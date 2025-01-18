@@ -11,11 +11,11 @@ int getlength(char arr[],int n){
     {
         count++;
         index++;
-        /* code */
     }
     return count;
-    
 }
+
+
 void convertintouppercase(char arr[],int n){
     int len = getlength(arr,n);
     for (int i = 0; i < len; i++)
@@ -23,10 +23,10 @@ void convertintouppercase(char arr[],int n){
         char ch = arr[i];
         ch = ch - 'a'+'A';
         arr[i] = ch;
-        /* code */
     }
-    
 }
+
+
 void reversechararray(char arr[],int n){
     int len = getlength(arr,n);
     int l=0; 
@@ -37,6 +37,8 @@ void reversechararray(char arr[],int n){
         h--;
     }
 }
+
+
 bool checkpalindrome(char arr[],int n){
     int len = getlength(arr,n);
     int l = 0;
@@ -53,16 +55,21 @@ bool checkpalindrome(char arr[],int n){
     return true;
 }
 
-int main(){
-    char arr1[100];
-    cout<<"enter the input"<<endl;
-    cin>>arr1;
 
-    char arr2[100];
-    cout<<"enter the input"<<endl;
-    cin>>arr2;
+int main(){
+    char arr[100];
+    // cin.getline(arr,100,'\t');
+    cin.get(arr,100);
+    cout<<arr;
+    // char arr1[100];
+    // cout<<"enter the input"<<endl;
+    // cin>>arr1;
+
+    // char arr2[100];
+    // cout<<"enter the input"<<endl;
+    // cin>>arr2;
     
-    cout<<strcat(arr1,arr2)<<endl;
+    // cout<<strcat(arr1,arr2)<<endl;
 
 
     // char arr[1000];
@@ -79,6 +86,7 @@ int main(){
     // cout<<ans;
     // cout<<"your name is :"<<arr<<endl;
     // cout<<arr[0]<<" "<<(int)arr[0];
-return 0;
+    
+    return 0;
 
 }
