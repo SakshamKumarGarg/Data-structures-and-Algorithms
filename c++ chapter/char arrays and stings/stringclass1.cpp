@@ -5,16 +5,23 @@
 using namespace std;
 
 int main(){
-    string s1 = "rohit";
-    vector<string> s2 = {"G","P","PG"};
-    int n = s2.size();
-    for(int i = 0;i<n;i++){
-        if(s2[i]=="G"){
-            cout<<"found";
-        }
-    }
+    // string s = "23:33";
+    // cout<<s.substr(0,2 );
+    // string s1 = "rohit";
+    // vector<string> s2 = {"G","P","PG"};
+    // int n = s2.size();
+    // for(int i = 0;i<n;i++){
+    //     if(s2[i]=="G"){
+    //         cout<<"found";
+    //     }
+    // }
+    string s1 = "aaaa";
+    string s2 = "aaaA";
 
-    // cout<<s1.compare(s2);
+    string s3 = tolower(s1);
+    string s4 = tolower(s2);
+
+    cout<<s3.compare(s4);
     // s2.push_back(s1[0]);
     // cout<<s2;
     // string name = "Hello jee kaise ho saare";

@@ -3,6 +3,18 @@
 #include<limits.h>
  
 using namespace std;
+bool checksorted(int arr[],int size,int index){
+    if(index == size-1) return true;
+    bool currans = false;
+    bool recursionans = false;
+    if(arr[index+1]>arr[index]) currans = true;
+
+    recursionans = checksorted(arr,size,index+1);
+    // return (currans && recursionans);   below statement is also do same thing
+    if(currans == true && recursionans == true) return true;
+    else return false;
+}
+
 void printdigits(int num){
     if(num==0) return;
 
@@ -29,6 +41,7 @@ void printodd(int arr[5],int size,int index){
     printodd(arr,size,index+1);                             // !(arr[index]) tells even 
 }
 
+
 void searchmax(int arr[5],int size, int index,int &ans){
     if(index == size) return;
     ans = max(ans,arr[index]);
@@ -36,6 +49,7 @@ void searchmax(int arr[5],int size, int index,int &ans){
     searchmax(arr,size,index+1,ans);
 
 }
+
 void searchmin(int arr[5],int size, int index,int &ansmin){
     if(index == size) return;
     ansmin = min(ansmin,arr[index]);
@@ -43,6 +57,7 @@ void searchmin(int arr[5],int size, int index,int &ansmin){
     searchmin(arr,size,index+1,ansmin);
 
 }
+
 void searchtarget(int arr[5],int size,int target, int index){
     if(index==size) return;
     if(arr[index]==target) cout<<index;
@@ -63,13 +78,15 @@ int main(){
     int s = 0;
     int e = size-1;
     int index = 0;
-    int target = 50;
-    int ans = INT_MIN;
-    int ansmin = INT_MAX;
-    int num;
-    cin>>num;
+    // int target = 50;
+    // int ans = INT_MIN;
+    // int ansmin = INT_MAX;
+    // int num;
+    // cin>>num;
 
-    printdigits(num);
+    // printdigits(num);
+    bool ans = checksorted(arr,size,index);
+    cout<<ans;
 
     // searchmax(arr,size,index,ans);
     // searchmin(arr,size,index,ansmin);

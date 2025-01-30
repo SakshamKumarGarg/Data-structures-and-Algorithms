@@ -57,6 +57,9 @@ bool checkpalindrome(char arr[],int n){
 
 
 int main(){
+    
+    
+    cout<<s;
     char arr[100];
     // cin.getline(arr,100,'\t');
     cin.get(arr,100);
