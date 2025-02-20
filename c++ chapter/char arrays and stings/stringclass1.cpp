@@ -15,13 +15,13 @@ int main(){
     //         cout<<"found";
     //     }
     // }
-    string s1 = "aaaa";
-    string s2 = "aaaA";
+    // string s1 = "aaaa";
+    // string s2 = "aaaA";
 
-    string s3 = tolower(s1);
-    string s4 = tolower(s2);
+    // string s3 = tolower(s1);
+    // string s4 = tolower(s2);
 
-    cout<<s3.compare(s4);
+    // cout<<s3.compare(s4);
     // s2.push_back(s1[0]);
     // cout<<s2;
     // string name = "Hello jee kaise ho saare";
@@ -67,10 +67,15 @@ int main(){
     // cout<<name.back()<<endl;
     // cout<<name.length()<<endl;
 
-    // string sentence;
-    // cin>>sentence;
+    string sentence;
+    cin>>sentence;
     // getline(cin, sentence, '\n');
-    // cout<<sentence<<endl;
+    string x;
+    cin>>x;
+
+    sentence.append(x);
+
+    cout<<sentence<<endl;
     // getline(cin,sentence,'\n');
     // string str;
     // str.push_back('a');

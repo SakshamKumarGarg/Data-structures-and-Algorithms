@@ -30,6 +30,5 @@ int main(){
     vector<int> v = {5,4,3,2,1};
     insertionsort(v);
     printvector(v);
-return 0;
-
+    return 0;
 }

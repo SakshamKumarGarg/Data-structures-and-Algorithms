@@ -9,7 +9,7 @@ void printvector(vector<int> &v)
     {
         cout << v[i] << " ";
     }
-    cout << endl;
+    cout << endl;    
 }
 void selectionsort(vector<int> &v){
     int n = v.size();
@@ -19,7 +19,6 @@ void selectionsort(vector<int> &v){
             if(v[j]<v[minindex]){
                 minindex = j;
             }
-
         }
         swap(v[i],v[minindex]);
     }

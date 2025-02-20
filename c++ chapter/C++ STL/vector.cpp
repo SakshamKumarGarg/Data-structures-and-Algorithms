@@ -9,19 +9,19 @@ int main(){
 
     
 
-    // vector<vector<int> > arr(5, vector<int>(4,0));
+    vector<vector<int> > arr(5, vector<int>(4,0));
 
     // int totalrows = arr.size();
     // int totalcolumns =  arr[0].size();
 
     // cout<<totalrows<<" "<<totalcolumns;
 
-    // vector<vector<int>> brr(4);
+    vector<vector<int>> brr(4);
 
-    // brr[0] = vector<int>(3);
-    // brr[1] = vector<int>(4);
-    // brr[2] = vector<int>(5);
-    // brr[3] = vector<int>(2);
+    brr[0] = vector<int>(3);
+    brr[1] = vector<int>(4);
+    brr[2] = vector<int>(5);
+    brr[3] = vector<int>(2);
 
     // int Totalrows = brr.size();
     // int Totalcolumns;
@@ -29,8 +29,7 @@ int main(){
     // {
     //     cout<<brr[i].size()<<" ";
     //     /* code */
-    // }
-
+    // } 
 
     
 
