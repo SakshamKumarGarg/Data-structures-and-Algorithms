@@ -16,6 +16,7 @@ void printmiddle(stack<int> &s,int count){
     s.push(topElement);
     
 }
+
 int main(){
     stack<int> s;
     s.push(10);
