@@ -75,30 +75,31 @@ int main(){
     s.push(20);
     s.push(30);
     s.push(40);
-    s.push(50);
-    s.print();    
 
-    s.push(60);   // here it get overflows 
-    s.print();
+    // s.push(50);
+    // s.print();    
 
-    cout<<s.getTop()<<endl;
-    cout<<s.getsize()<<endl;
-    cout<<s.isEmpty()<<endl;
+    // s.push(60);   // here it get overflows 
+    // s.print();
 
-    s.pop();
-    s.print();
+    // cout<<s.getTop()<<endl;
+    // cout<<s.getsize()<<endl;
+    // cout<<s.isEmpty()<<endl;
 
-    s.pop();
-    s.pop();
-    s.print();
-    cout<< s.getsize()<<endl;
+    // s.pop();
+    // s.print();
 
-    s.pop();
-    s.pop();
+    // s.pop();
+    // s.pop();
+    // s.print();
+    // cout<< s.getsize()<<endl;
 
-    s.print();
+    // s.pop();
+    // s.pop();
 
-    s.pop();
+    // s.print();
+
+    // s.pop();
 
 return 0;
 
