@@ -166,6 +166,16 @@ class CircularDeque{
 // };
 
 int main(){
+    CircularDeque q(5);
+    q.pushFront(10);
+    q.pushFront(20);
+    q.pushFront(30);
+    q.pushBack(40);
+    q.pushBack(50);
+    q.pushBack(60);
+
+    q.print();
+    // cout<<q.isempty()<<endl;
     // Deque dq(5);
     // dq.pushFront(10);
     // dq.print();
