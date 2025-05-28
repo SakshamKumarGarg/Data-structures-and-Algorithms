@@ -48,8 +48,8 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    int getsum = sum(n);
-    cout<<getsum;
+    // int getsum = sum(n);
+    // cout<<getsum;
     // int fibo = fibonacci(n);
     // cout<<fibo;
 

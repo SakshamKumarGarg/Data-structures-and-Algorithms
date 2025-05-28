@@ -15,6 +15,7 @@ bool checksorted(int arr[],int size,int index){
     else return false;
 }
 
+
 void printdigits(int num){
     if(num==0) return;
 
@@ -24,6 +25,7 @@ void printdigits(int num){
     int ans = num%10;
     cout<<ans<<endl;
 }
+
 
 int binarysearch(int arr[7],int size, int s, int e, int target){
     if(s>e) return -1;
