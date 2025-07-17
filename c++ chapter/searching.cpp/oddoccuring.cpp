@@ -104,7 +104,7 @@ int findOddoccurrence(int arr[],int n){
 }
 
 int main(){
-    int arr[] = {2,2,3,3,1,1,4,4,6,6,7,7};
+    int arr[] = {2,2,3,3,5,1,1,4,4,6,6,7,7};
     int n = 13;
 
     int ans = findOddoccurrence(arr,n);

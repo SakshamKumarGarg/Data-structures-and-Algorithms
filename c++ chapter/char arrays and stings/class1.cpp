@@ -61,7 +61,7 @@ int main(){
     
     cout<<s;
     char arr[100];
-    // cin.getline(arr,100,'\t');
+    // cin.getline(arr,100,'\t'); 
     cin.get(arr,100);
     cout<<arr;
     // char arr1[100];

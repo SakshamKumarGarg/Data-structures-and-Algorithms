@@ -95,5 +95,7 @@ int main()
 
     cout << A.getGpa() << endl;
 
+    A.gfchatting();
+
     return 0;
 }

@@ -3,13 +3,13 @@ using namespace std;
 
 int main(){
     int a = 5;
-    // int &b = a;
+    int &b = a;
     // cout<<b<<endl;
     // cout<<&b<<endl;
-    // // cout<<*b<<endl;
+    // cout<<*b<<endl;
     // cout<<&a<<endl;
     // cout<<a<<endl;
-    // int *ptr = &a;
+    int *ptr = &a;
     // cout<<*ptr<<endl;
     // cout<<ptr<<endl;
     // cout<<&(*ptr)<<endl;
@@ -23,16 +23,16 @@ int main(){
     // float *fptr = &f;
     // cout<<sizeof(ptr)<<endl; 
 
-    // int *q = ptr;            // copying value of ptr in q 
+    int *q = ptr;            // copying value of ptr in q 
     // cout<<q<<endl;
     // cout<<&q<<endl;
     // cout<<*q;
 
 
-    // int arr[] = {10,20,30};
-    // cout<<arr<<endl;
-    // cout<<&arr<<endl;
-    // cout<<&arr[0]<<endl;
+    int arr[] = {10,20,30};
+    cout<<arr<<endl;
+    cout<<&arr<<endl;
+    cout<<&arr[0]<<endl;
     // int *ptr = arr;
 
     // ptr = ptr+1;
@@ -61,10 +61,10 @@ int main(){
     // cout<<cptr+3<<endl;
     // cout<<cptr+1<<endl;
 
-    char ch = 'a';
-    char *cptr = &ch;
+    // char ch = 'a';
+    // char *cptr = &ch;
 
-    cout<<cptr<<endl;
+    // cout<<cptr<<endl;
 
 
 return 0;

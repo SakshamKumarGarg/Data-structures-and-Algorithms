@@ -52,6 +52,8 @@ public:
     
 
 };
+
+
 int main(){
     // student A;
     // A.id = 1;
@@ -87,13 +89,6 @@ int main(){
     delete A; /* in dynamic memory allocation we need to called destructor as in 
                dynamic memory allocation we need to delete by itself */
     
-
-
-
-
-
-
-
     return 0;
 
 }
