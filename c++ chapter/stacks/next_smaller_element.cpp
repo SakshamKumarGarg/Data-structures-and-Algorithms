@@ -12,9 +12,9 @@ void solve(stack<int> &s, vector<int> &arr,vector<int> &ans){
 
         ans.push_back(s.top());
         s.push(element);
-        
     }
 }
+
 int main(){
     vector<int> v;
     v.push_back(8);

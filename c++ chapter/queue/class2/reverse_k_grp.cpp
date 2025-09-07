@@ -26,11 +26,9 @@ void reverseInKGroup(queue<int> &q,int k,int count){
             q.pop();
             q.push(element);
         }
-
-
     }
-
 }
+
 int main(){
     queue<int> q;
     q.push(10);

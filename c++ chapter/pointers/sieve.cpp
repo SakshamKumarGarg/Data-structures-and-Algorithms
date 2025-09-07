@@ -22,7 +22,6 @@ vector<bool> Sieve(int n){
     }
     return sieve;
     
-
 }
 
 int main(){

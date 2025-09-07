@@ -34,7 +34,6 @@ class Stack{
                 top2--;
                 arr[top2] = value;
             }
-
         }
 
         void pop1(){
