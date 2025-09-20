@@ -113,7 +113,7 @@ int getMax(Node* root){
         root = root->right;
     }
 
-    return root->right;
+    return root->data;
 }
 
 bool SearchBST(Node* root,int target){
@@ -125,7 +125,7 @@ bool SearchBST(Node* root,int target){
     }
     else{
         if(target < root->data){
-            bool leftans = searchBST(root->left,target);
+            bool leftans = SearchBST(root->left,target);
             if(leftans == true){
                 return true;
             }
