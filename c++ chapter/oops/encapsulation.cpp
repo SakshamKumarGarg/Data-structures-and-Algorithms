@@ -78,7 +78,7 @@ public:
         delete this->gpa; // at line 25 there is memory allocation so we need to delete to prevent memory leak
     }
 
-private:
+public:
     void gfchatting()
     {
         cout << this->name << "chantting with gf" << endl;

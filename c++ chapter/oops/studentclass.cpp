@@ -22,7 +22,7 @@ public:
         this->id = id;
         this->name = name;
         this->nos = nos;
-        this->gpa = new int(gpa);
+        this->gpa = new int(gpa);   //since we create gpa pointer so there must be a dynamical allocation
     }
     // copy constructor
     student(const student &srcobj){    // srcobj signify A
@@ -46,8 +46,8 @@ public:
 
     // destructor default destructor
     ~student(){
-        cout<<"Student ka default destructor called"<<endl;
-        delete this->gpa;     // at line 25 there is memory allocation so we need to delete to prevent memory leak
+        cout<<this->name<<" Student ka default destructor called"<<endl;
+        delete this->gpa;     // at line 25 there is memory allocation dynamically so we need to delete to prevent memory leak
     }
     
 
@@ -83,6 +83,7 @@ int main(){
 
     // dynamic allocation or student pointer 
     student *A  = new student(1,14,"Saksham",7,9.8);
+    student B(2,23,"karan",8,9.5);
     cout<<A->name<<endl;
     cout<<A->age<<endl;
     A->study();
